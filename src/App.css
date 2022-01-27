@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+body {
+  font-family:sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#lower-bread{
+  height: 70px;
+  background-color: orange;
+  box-shadow: inset -15px 0 #c15711;
+  padding: 20px 0;
+  width: 100%;
+  border-radius: 0 0 30px 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#upper-bread{
+  height: 70px;
+  background-color: orange;
+  box-shadow: inset -15px 0 #c15711;
+  padding: 20px 0;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 30px 30px 0 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Meat{
+  height: 30px;
+  background-color: #702e05;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.Lettuce{
+  height: 30px;
+  background-color: green;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.Bacon{
+  height: 20px;
+  background-color: #c45e38;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.Cheese{
+  height: 20px;
+  background-color: #f4d004;
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+header{
+  background-color: #703b09;
+}
+
+.navbar-brand{
+  background-color: white;
+}
+
+.navbar-nav{
+  margin-left: auto;
+}
+
+.nav-link{
   color: white;
+  padding: 16px 10px;
+  border-bottom: 4px solid #703b09;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-link:hover{
+  background-color: #8f5c2c;
+  border-bottom: 4px solid #40a4c8;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App>div:nth-child(1){
+  width: 500px;
+  height: 500px;
+  overflow-y: auto;
+}
+
+
+.footer{
+  width: 100%;
+  background-color: #cf8f2e;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: 0 2px 1px #ccc;
+  box-shadow: 0 2px 1px #ccc;
+  margin: auto;
+  padding: 10px 0;
+}
+
+button{
+  padding: 10px;
+  font-weight: 700;
+  width: 200px;
 }
